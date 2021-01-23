@@ -5,8 +5,9 @@ import os
 import hashlib
 
 def check_file():
-	malicious_check ='03e693d9f2f687e0f40e36a8df7fcb4d1c22974012b7c2a55c000eb30f305824'
-	
+	malicious_check = open(./bad_hashes)
+	malicious_list = malicious_check.readlines()
+
 	for root,dirs,files in os.walk ('.'):
 		for filename in sorted(files):
 			full_path = os.path.join(root,filename)
@@ -15,8 +16,9 @@ def check_file():
 			mdholder = hashlib.md5(full_read).hexdigest()
 			sha256holder = hashlib.sha256(full_read).hexdigest()
 			sha512holder = hashlib.sha512(full_read).hexdigest()
-			if malicious_check in [mdholder, sha256holder, sha512holder]:
-				print(filename)
+			for item in malicious_list:
+				if item in [mdholder, sha256holder, sha512holder]:
+					print(filename)
 			full_open.close()
 
 def main():
