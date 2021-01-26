@@ -1,7 +1,5 @@
 #!usr/bin/env python
-def oops():
-    file_list = ['/~/Documents/yes']
-    hash_list = ['19823uyj4nhbjnva7y89ui345hkjASdf123u']
+def oops(file_list, hash_list):
     title1 = 'Bad File'
     title2 = 'Hash of Bad File'
     print('Uh-oh! Looks like we found some potentially bad apples in your system, listing them out for you now.')
@@ -14,4 +12,7 @@ def oops():
     print("We've listed all files in your system that match malicious signatures (according to our data), feel free to look up these hashes in VirusTotal or a similar website to learn more about them and what to do.")
     print("Thanks for using PotatoAV, for more information please visit https://github.com/vargasfl/PotatoAV")
     print('Bye-bye!')
-oops()
+def main(file_list, hash_list):
+    oops(file_list, hash_list)
+if __name__ == '__main__':
+    main()
