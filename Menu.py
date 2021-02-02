@@ -18,6 +18,7 @@ def menu():
       print()
       print(open('./README.md').read())
   if response == '1':
+      print('Go get some lunch or something, this is going to take a while')
       checker.check_file()
   if response == '3':
       print()
