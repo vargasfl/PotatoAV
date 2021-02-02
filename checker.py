@@ -12,17 +12,18 @@ def check_file():
 	file_list = []
 	hash_list = []
 	vt_results = {}
+	comparison = 'Scan request successfully queued, come back later for the report'
 	for root,dirs,files in os.walk ('.'):
 		for filename in sorted(files):
 			full_path = os.path.join(root,filename)
 			full_open = open(full_path, 'rb')
 			full_read = full_open.read()
 			mdholder = hashlib.md5(full_read).hexdigest()
+			vt_results = vt.getfile(mdholder)
 			print(full_path)
-			#vt_results = vt.scanfile(full_path)
-			#print(vt_results)
-			print(mdholder)
-			#time.sleep(30)
+			time.sleep(15)
+			print(vt.getfile(mdholder))
+			time.sleep(15)
 	if len(file_list) == 0:
 		print('Wow! Your system is completely clean (as far as I can tell).')
 		print('Thanks for using PotatoAV, for more information check out https://github.com/vargasfl/PotatoAV')
