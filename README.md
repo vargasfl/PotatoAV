@@ -11,3 +11,15 @@ The program sends a MD5 hash of your file to the API scan, then takes the API's 
 #### And this is what it looks like after Potato:
 
 <img src ="images/POTATOFIED.png" >
+
+### What you need beforehand
+In order to run Potato, you'll need Python installed on your machine. Other than that you should be good to go! Potato can run on any operating system that can run Python.
+
+### Getting Started
+After downloading, first run '__init__' so that the program can initialize itself. Not running '__init__' will lead to an error involving '.vt-config.json'.
+
+`python3 __init__.py`
+
+For everything after that, 'Menu' will be the way to go.
+
+`python3 Menu.py`
