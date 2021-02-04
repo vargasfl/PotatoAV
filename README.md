@@ -20,6 +20,21 @@ After downloading, first run '__init__' so that the program can initialize itsel
 
 `python3 __init__.py`
 
-For everything after that, 'Menu' will be the way to go.
+For everything after that, 'Menu' will be the way to go. Once you run it, the program will tell you everything you need to know!
 
 `python3 Menu.py`
+
+### Outside sources
+The '__init__' code came from [4ppsec's VirusTotal API script.](https://github.com/4ppsec/virustotal-api-v2) They were definitely a huge step up from having a text file with all the hashes we want to look for.
+
+### Other Thanks
+Thanks to Gavin and Bryan for helping us smooth out the code when it didn't want to work (at all!). 
+
+## Thanks for using PotatoAV
+If you want to see more from us check out our Githubs!
+
+[Flavio's Github](https://github.com/vargasfl)
+
+[G's Github](https://github.com/gerardovigil)
+
+Thanks for using PotatoAV! Bye-bye!
