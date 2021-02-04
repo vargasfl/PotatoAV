@@ -20,7 +20,7 @@ After downloading, first run '__init__' so that the program can initialize itsel
 
 `python3 __init__.py`
 
-For everything after that, 'Menu' will be the way to go. Once you run it, the program will tell you everything you need to know!
+For everything after that, '__Menu__' will be the way to go. Once you run it, the program will tell you everything you need to know!
 
 `python3 Menu.py`
 
